@@ -15,7 +15,6 @@ public class AsyncService {
 
             sleep(1000);
 
-            // имитация ошибки
             if (Math.random() > 0.5) {
                 throw new RuntimeException("Ошибка при получении данных");
             }
