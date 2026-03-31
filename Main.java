@@ -14,7 +14,7 @@ public class Main {
                 .thenApply(service::processData)
                 .exceptionally(service::handleError)
                 .thenAccept(result -> LoggerUtil.log("Финальный результат: " + result))
-                .join(); // ждём завершения
+                .join();
 
         executor.shutdown();
 
